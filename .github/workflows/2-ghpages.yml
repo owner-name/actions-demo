@@ -20,8 +20,5 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - run: sudo lshw -html > ./index.html
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+      - run: git commit -am "Add lshw html"
+      - run: git push origin HEAD:gh-pages
