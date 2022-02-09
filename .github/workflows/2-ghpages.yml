@@ -20,5 +20,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - run: sudo lshw -html > ./index.html
-      - run: git commit -am "Add lshw html"
-      - run: git push origin HEAD:gh-pages
+      - run: |
+          git config user.email "wei.he@mlh.io"
+          git config user.name "Wei"
+          git commit -am "Add lshw html"
+          git push origin HEAD:gh-pages
