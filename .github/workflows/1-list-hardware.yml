@@ -16,5 +16,5 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: apt update && apt install neofetch -y && neofetch
+      - run: sudo apt update && sudo apt install neofetch -y && neofetch
       - run: sudo lshw -short
