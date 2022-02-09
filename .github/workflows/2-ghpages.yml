@@ -25,4 +25,4 @@ jobs:
           git config user.name "Wei"
           git add index.html
           git commit -m "Add lshw html"
-          git push origin HEAD:gh-pages
+          git push
